@@ -6,8 +6,11 @@ if not EXIST %0\..\..\project_venv\ (
     cd %0\..\..
     py -3 -m venv project_venv
     call %0\..\..\project_venv\Scripts\activate.bat
-    pip install pytrends
+    pip install pytrends fastapi[all] progressbar2
     echo Created VENV
 )
 if not defined VIRTUAL_ENV  (
-    call %0\..\..\projectvenv\Scripts\activate.bat)
+    call %0\..\..\project_venv\Scripts\activate.bat)
+
+cd %0\..
+uvicorn server:app --reload
