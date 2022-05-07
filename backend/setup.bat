@@ -11,6 +11,3 @@ if not EXIST %0\..\..\project_venv\ (
 )
 if not defined VIRTUAL_ENV  (
     call %0\..\..\project_venv\Scripts\activate.bat)
-
-cd %0\..
-uvicorn server:app --reload
