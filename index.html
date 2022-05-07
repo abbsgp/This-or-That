@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This or That</title>
+    <link rel="stylesheet" href="centerButtons.css">
+    <script src="jscode.js"></script>
 </head>
-<body style="background-color:#add8e6;">
-    <center><h1>This or That</h1></center>
-    <p style="font-style:oblique">Instructions: Choose one of the two options that you believe is the most searched.</p>
-    <button onclick="alert('Correct!')"; style="text-align:center; font-size:30px" style>Banana<img src="images/banana.png" alt="banana pic" width="75" height="75"> </button>
-    <button onclick="alert('Correct!')"; style="text-align:center; font-size:30px" style)">Apple<img src="images/apple.png" alt="apple pic" width="75" height="75"></button>
 
-    <hr>
-   
+<body style="background-color:#add8e6;">
+    <center><h1>Welcome to This or That!</h1></center>
+    <center><h4>Created by Vince Dionisio, Abegail Palad, Kalyan, and Andrew Emerson</h4></center>
+    <p style="font-style:oblique">Instructions: Choose one of the two options that you believe is the most searched!</p>
+    <p style="font-style:oblique">If you get it right, move on to the next question.</p>
+    
+    <div class="flex-parent jc-center">
+    <button onclick="alert('Incorrect!')"; style="text-align:center; font-size:30px" style>Banana<img src="images/banana.png" alt="banana pic" width="75" height="75"> </button>
+    <button onclick="alert('Correct!')"; style="text-align:center; font-size:30px" style)">Apple<img src="images/apple.png" alt="apple pic" width="75" height="75"></button>
+    </div>
 </body>
+
 </html>
