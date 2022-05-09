@@ -81,11 +81,6 @@ class HTable(object):
         # the new list of values that we created in ht2.
         self.array = ht2.array
 
-    def add(self, key, value):
-        ...
-        if self.is_full():
-            self.double()
-
     def __setitem__(self, key, value):
         self.add(key, value)
 
