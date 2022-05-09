@@ -1,5 +1,6 @@
 import time
 import treeBasedDB
+import hashBasedDB
 
 import matplotlib
 import numpy as np
@@ -13,19 +14,21 @@ searchTime = []
 noiseReduce = 10000
 
 db = treeBasedDB.dataBase(False)
+data = hashBasedDB.dataBase(False)
+
 bar = progressbar.ProgressBar(max_value=1000).start()
 file = open("database2.csv", "r")
 lines = file.readlines()
 for i in range(5):
     kvpair = lines[i].split(",")
-    db.insert(kvpair[0],int(kvpair[1]))
-for i in range(5,1000):
+    db.insert(kvpair[0], int(kvpair[1]))
+for i in range(5, 1000):
     kvpair = lines[i].split(",")
-    db.insert(kvpair[0],int(kvpair[1]))
+    db.insert(kvpair[0], int(kvpair[1]))
     firsttime = 0
     secondtime = 0
     nValues.append(i)
-    for j in range (noiseReduce):
+    for j in range(noiseReduce):
         start = time.time_ns()
         tmp = db.getWords(5)
         gtime = time.time_ns()
@@ -36,9 +39,9 @@ for i in range(5,1000):
     getTime.append(firsttime/noiseReduce)
     searchTime.append(secondtime/noiseReduce)
     bar.update(i)
-    
-plt.plot( nValues, getTime, "--", color="red", label="get random values" )
-plt.plot( nValues, searchTime, color="blue", label="findmostpopular" )
+
+plt.plot(nValues, getTime, "--", color="red", label="get random values")
+plt.plot(nValues, searchTime, color="blue", label="findmostpopular")
 plt.xlabel("n")
 plt.ylabel("Time(ns)")
 plt.legend()

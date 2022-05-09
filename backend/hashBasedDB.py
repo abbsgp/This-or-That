@@ -22,7 +22,7 @@ class dataBase:
         with open("database.csv", "r") as file:
             for line in file:
                 kvpair = line.split(",")
-                self.myHash.insert(kvpair[0], int(kvpair[1]))
+                self.myHash.add(kvpair[0], int(kvpair[1]))
                 self.keys.append(kvpair[0])
 
     def insert(self, key, value):

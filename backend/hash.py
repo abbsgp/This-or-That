@@ -50,8 +50,8 @@ class HTable(object):
             # it means key didn't exist.
             raise KeyError()
 
-        def is_full(self):
-            """Determines if the HashTable is too populated."""
+    def is_full(self):
+        """Determines if the HashTable is too populated."""
         items = 0
         # Count how many indexes in our array
         # that is populated with values.
