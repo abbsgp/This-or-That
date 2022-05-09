@@ -59,7 +59,7 @@ def compare_words(payload: dict = Body(...)):
 
     # Sanatize the input to only keys that start with 'word': word0, word1, etc
     payload = {k: v for k, v in payload.items() if k[0:4] == 'word'}
-    mostpopular, scores = hash.getMostPopular(list(payload.values()))
+    mostpopular, scores = data.getMostPopular(list(payload.values()))
     i = 0
     ret = {"popular": mostpopular}
     for i in range(len(payload.items())):

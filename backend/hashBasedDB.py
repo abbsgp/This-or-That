@@ -26,7 +26,7 @@ class dataBase:
                 self.keys.append(kvpair[0])
 
     def insert(self, key, value):
-        self.myTree.insert(key, value)
+        self.myHash.add(key, value)
         self.keys.append(key)
 
     def getWords(self, n=2) -> List[str]:
