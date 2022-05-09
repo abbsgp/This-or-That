@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="centerButtons.css"> 
     <!--JavaScript below in head of HTML file-->
     <script type="text/javascript">
-        var score = 0;
-        var questions = 10;
+        var score = 0; // initializing player's points
+        //var questions = 1; // initiliazed to 1, # will increase as player answer's # of questions
 
-    //Game function where two words will be generated dynamically
-        function play() {
+    //Game function where two words will be generated dynamically 
+    function game(tOT) {
+    //need to get 2 words
+    tOT.getWords();
 
-
-        }
-        
+    }
+    
     //Answer function will be where the values of the two words are compared and an answer is returned.
     function answer(question) {
-        
+    //need to get the result of most popular word 
+
+    //if player is correct, score++ and game() is ran again
+
     }
 
     </script>>
@@ -37,8 +41,9 @@
     <div class="flex-parent jc-center">
         <span id="question">
         <!--Question changes dynamically-->
-        <button onclick="javascript:answer(1)"; style="text-align:center; font-size:30px" style>Banana<img src="images/banana.png" alt="banana pic" width="75" height="75"> </button>
-        <button onclick="javascript:answer(2)"; style="text-align:center; font-size:30px" style)">Apple<img src="images/apple.png" alt="apple pic" width="75" height="75"></button>
+        <button onclick="javascript:game()"; style="text-align:center; font-size:30px" style>Random Word 1</button>
+        <button onclick="javascript:game()"; style="text-align:center; font-size:30px" style)">Random Word 2</button>
+
         <font face="Tahoma" color="red"><span id="score"></span></font>
     </div>
     
