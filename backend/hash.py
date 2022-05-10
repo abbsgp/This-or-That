@@ -1,3 +1,4 @@
+# from https://coderbook.com/@marcus/how-to-create-a-hash-table-from-scratch-in-python/
 class HTable(object):
     def __init__(self, length=100):
         self.array = [None] * length
