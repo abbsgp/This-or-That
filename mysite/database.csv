@@ -27,7 +27,6 @@ bear,1040816
 beautiful,470588
 bed,1857143
 bedroom,515152
-beer,785714
 bell,1272727
 big,4882353
 bird,724138
@@ -35,19 +34,14 @@ birth,666667
 birthday,1500000
 bit,282051
 bite,298701
-black,8090909
 block,960784
-blood,2225806
-blow,250000
 blue,4263158
 board,1325581
 boat,923077
 body,2703704
-bone,538462
 book,2703704
 border,298701
 bottle,612903
-bottom,428571
 bowl,1439024
 box,2333333
 boy,1564103
@@ -58,7 +52,6 @@ break,724138
 breakfast,1222222
 bridge,666667
 brother,639344
-brown,2125000
 brush,351351
 burn,449275
 business,1941176
@@ -152,12 +145,10 @@ fall,1083333
 family,3166667
 farm,1500000
 father,492537
-fat,1040816
 fault,86957
 fear,282051
 feed,694915
 feel,960784
-female,1040816
 few,111111
 fight,754386
 fill,265823
@@ -192,7 +183,6 @@ give,1127660
 glad,20408
 glass,1222222
 go,4555556
-god,1040816
 gold,1941176
 good,5250000
 grandfather,30928
@@ -245,7 +235,6 @@ juice,724138
 jump,315789
 keep,1083333
 key,1500000
-kill,818182
 kind,754386
 king,2703704
 kitchen,1500000
@@ -278,7 +267,6 @@ luck,123596
 machine,1564103
 main,1000000
 make,6142857
-male,851852
 man,3347826
 many,6692308
 map,3347826
@@ -287,9 +275,7 @@ market,2571429
 matter,204819
 meal,388889
 meat,694915
-medicine,886792
 meet,408451
-member,250000
 mention,20408
 method,298701
 middle,1127660
@@ -351,7 +337,6 @@ pay,2333333
 peace,234568
 pen,351351
 people,3347826
-period,851852
 person,1173913
 piano,369863
 pick,960784
@@ -430,11 +415,9 @@ second,724138
 sell,851852
 sentence,282051
 serve,234568
-sex,3166667
 shake,333333
 shape,250000
 share,449275
-she,754386
 shine,219512
 ship,492537
 shirt,1325581
@@ -455,7 +438,6 @@ sink,315789
 sister,612903
 size,3166667
 skill,98901
-skin,1702703
 skirt,234568
 sky,724138
 sleep,1127660
@@ -496,9 +478,7 @@ street,3166667
 structure,219512
 student,1040816
 study,470588
-stupid,86957
 subject,75269
-substance,98901
 sugar,1173913
 summer,1222222
 sun,1173913
@@ -558,12 +538,10 @@ wear,923077
 weather,15666667
 wedding,1439024
 week,1272727
-weight,1941176
 welcome,219512
 west,3761905
 wheel,1000000
 while,1083333
-white,6142857
 wife,1631579
 will,4555556
 win,562500

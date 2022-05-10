@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This or That</title>
+</head>
+
+<body style="background-color:#add8e6;" ; onload="javascript:play()">
+    <center>
+        <h1>Welcome to This or That!</h1>
+    </center>
+    <center>
+        <h4>Created by Vince Dionisio, Abegail Palad, Kalyan Pullela, and Andrew Emerson</h4>
+    </center>
+    <p style="font-style:oblique">Instructions: Choose one of the two options that you believe is the most searched!</p>
+    <p style="font-style:oblique">If you get it right, move on to the next question.</p>
+    <p><span id="score">score: {{score}}</p>
+    {% if correct%}
+         <h1 style="text-align:center; font-size:30px">{{correct}}</h1>
+    {% endif %}
+    <div class="flex-parent jc-center">
+        <span id="question">
+            <!--Question changes dynamically-->
+            <form name="" action="" method="POST" autocomplete="on">
+                {%csrf_token%}
+                <input id="submitbtn" name="submit" class="formbox" value="{{word1}}" type="submit"
+                    style="text-align:center; font-size:30px">
+                <input id="word1" name="word1" value="{{word1}}"" type="hidden">
+                <input id="word2" name="word2" value="{{word2}}" type="hidden">
+                <input id="chosen" name="chosen" value="{{word1}}" type="hidden">
+                <input id="score" name="score" value="{{score}}" type="hidden">
+
+            </form>
+
+            <form name="" action="" method="POST" autocomplete="on">
+                {%csrf_token%}
+                <input id="submitbtn" name="submit" class="formbox" value="{{word2}}" type="submit"
+                    style="text-align:center; font-size:30px">
+                <input id="word1" name="word1" value="{{word1}}"" type="hidden">
+                <input id="word2" name="word2" value="{{word2}}" type="hidden">
+                <input id="chosen" name="chosen" value="{{word2}}" type="hidden">
+                <input id="score" name="score" value="{{score}}" type="hidden">
+            </form>
+
+            <font face="Tahoma" color="red"><span id="score"></span></font>
+    </div>
+}
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+        }
+
+        .flex-parent {
+            display: flex;
+        }
+
+        .jc-center {
+            justify-content: center;
+        }
+
+        button.margin-right {
+            margin-right: 20px;
+        }
+    </style>
+
+</body>
+
+</html>

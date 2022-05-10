@@ -6,7 +6,7 @@ if not EXIST %0\..\..\project_venv\ (
     cd %0\..\..
     py -3 -m venv project_venv
     call %0\..\..\project_venv\Scripts\activate.bat
-    pip install pytrends fastapi[all] progressbar2
+    pip install pytrends fastapi[all] progressbar2 django
     echo Created VENV
 )
 if not defined VIRTUAL_ENV  (
