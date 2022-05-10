@@ -51,13 +51,6 @@ def compare_words(payload: dict = Body(...)):
 
 @app.post("/comparewordshash")
 def compare_words(payload: dict = Body(...)):
-    # Send a post request of form:
-    # {
-    #   "word1": "Apple"
-    #   "word2": "Bannana"
-    # }
-
-    # Sanatize the input to only keys that start with 'word': word0, word1, etc
     payload = {k: v for k, v in payload.items() if k[0:4] == 'word'}
     mostpopular, scores = data.getMostPopular(list(payload.values()))
     i = 0
